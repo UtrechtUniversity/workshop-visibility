@@ -1,0 +1,29 @@
+# Installation & Setup
+
+For this workshop you need the following:
+
+1. R, which can be downloaded from the [CRAN](https://cran.r-project.org/) website.
+
+2. RStudio, which can be downloaded from the [posit.co](https://posit.co/download/rstudio-desktop/) website. 
+
+3. Quarto, which can be downloaded from the [Quarto](https://quarto.org/docs/get-started/) website.
+
+4. The `postcards` and `fontawesome` R packages. 
+
+For this, you can open RStudio and paste the following lines of code in the _Console_ and press enter. 
+
+```{r}
+#| eval: false
+
+install.packages("postcards")
+```
+
+```{r}
+#| eval: false
+
+install.packages("fontawesome")
+```
+
+5. An account on [GitHub](www.github.com).
+
+Finally, it would be good if you had a photo of yourself that you could use for your personal website.

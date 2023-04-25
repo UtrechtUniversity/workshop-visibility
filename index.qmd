@@ -1,0 +1,3 @@
+# Welcome
+
+This workshop will take you through setting up two simple websites using the `postcards` package and the Quarto publishing system.

@@ -1,0 +1,35 @@
+# Quarto
+
+To make a more full website, you can use the Quarto publishing system. 
+
+## Create the project
+
+In RStudio, click *File* -> *New Project* -> *New Directory* -> *Quarto Website*
+
+Specify the folder name for your new project, perhaps just _website_ and create the basic website project.
+
+## Edit `_quarto.yml`
+
+- Open the `_quarto.yml` file in RStudio and make some edits:
+
+Set the `output-dir` in your `_quarto.yml` file to _docs_ like so:
+
+```{r}
+#| eval: false
+  type: website
+  output-dir: docs
+```
+
+- You can update the title of your website and whether you want your navbar menu on left or right-hand side.
+
+- Finally, you could choose another theme if you would like. 
+
+The default theme is `cosmo` but you can refer to the [Bootswatch](https://bootswatch.com/) website for the other in-built themes available to you. This workshop website is built in Quarto with the `pulse` theme, for example.
+
+## Render
+
+Save your changes and click the _Render_ button to create your website. The HTML files for the website should be built and saved in the _docs_ output directory as specified earlier. 
+
+## Add a blog
+
+If you want to add a blog to an existing Quarto website, the following tutorial is a good reference: [https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/](https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/)

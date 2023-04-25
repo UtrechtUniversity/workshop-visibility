@@ -1,0 +1,28 @@
+# GitHub
+
+You can easily deploy your website on GitHub for free!
+
+For this tutorial, we're going to assume nobody knows how to use Git & GitHub (i.e. version control) and that GitHub is just a means to an end to getting your website online.
+
+- Go to github.com and click the green button to create a new repository.
+
+- Give your repository a clear name, preferably one that aligns with the name of your local folder.
+
+- Make sure you create a _Public_ repository, otherwise your website will not go online.
+
+- Do not select any of the other options available to you at this moment. We want to create a wholly empty repository.
+
+- Once the repository is created, you can click the option to add files manually to the repsitory. Then just drag and drop the contents of your local folder (the files within the folder) to GitHub.
+
+- When everything is uploaded, you want to activate GitHub Pages. For this, you go the _Settings_ of the repository and go to _Pages_. There you can turn on the Pages option and most importatly, specific the source for deployment:
+
+    - For a postcards website, this should be the root of the main branch.
+    - For a Quarto website, this should the docs folder of the main branch.
+    
+- If all goes well, the website will start building and it will be online in a couple of minutes!
+
+## Advanced GitHub
+
+- You can utilize the power of Git & GitHub, to update your project using version control.
+
+- You can also utilize GitHub Actions to skip building the website locally and have GitHub take care of that. This means that you would only need to edit your website via the GitHub website, instead of building it locally via RStudio and uploading the changes to GitHub.

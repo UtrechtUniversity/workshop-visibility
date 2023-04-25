@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Improve Your Online Visibility"
+  author: "Neha Moopen"
+  date: "25-4-2023"
+  chapters:
+    - index.qmd
+    - installation-and-setup.qmd
+    - postcards.qmd
+    - quarto.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: pulse
+
+
+
+

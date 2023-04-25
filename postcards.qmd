@@ -1,0 +1,75 @@
+# Postcards
+
+The `postcards` package allows you to set up a single-page website using R Markdown. It's a great option for a simple website and/or if you're not familiar with programming.
+
+## Choose a template
+
+The `postcards` package offers five templates and it would be good to take a moment and which one you'd like to use. Don't worry, you can always change it later if needed!
+
+- [Jolla](https://seankross.com/postcards-templates/jolla/),
+- [Jolla Blue](https://seankross.com/postcards-templates/jolla-blue/),
+- [Trestles](https://seankross.com/postcards-templates/trestles/),
+- [Onofre](https://seankross.com/postcards-templates/onofre/),
+- [Solana](https://seankross.com/postcards-templates/solana/).
+
+## Create the project
+
+In RStudio, click *File* -> *New Project* -> *New Directory* -> *Postcards Website*
+
+Specify the folder name for your new project, perhaps just _postcard_ and select the template you would like to go with. 
+
+## Update the template
+
+In the `index.Rmd` file, update your name or website title and include a file path to your photo (which should preferably be in the same folder as `index.Rmd).
+
+You can also update the URLs. If you would like to use icons for your URLs, you have the following options:
+
+### Fontawesome Icons
+
+Fontawesome icons can be embedded using the `fontawesome` package we installed earlier. It can be used for URLs related to _email addresses_, _Twitter_, _LinkedIn_, _GitHub_. Other icons are available as well, you might want to explore the possibilities by referring to the `fontawesome` package's [GitHub page](https://github.com/rstudio/fontawesome)
+
+Note how you would have to adapt the `label` field of your template below and adapt it accordingly.
+
+```{r}
+#| eval: false
+  - label: '`r fontawesome::fa(name = "envelope", height = "30px")`'
+    url: "mailto:n.moopen@uu.nl"
+  - label: '`r fontawesome::fa(name = "github", height = "30px")`'
+    url: "https://github.com/nehamoopen"  
+  - label: '`r fontawesome::fa(name = "twitter", height = "30px")`'
+    url: "https://twitter.com/NehaMoopen"
+  - label: '`r fontawesome::fa(name = "linkedin", height = "30px")`'
+    url: "https://www.linkedin.com/in/neha-moopen/"
+```
+
+
+### Academicons
+
+Academicons can also be embedded like Fontawesome icons, but it looks a bit different. This is relevant for icons related to _Orcid_, _Google Scholar_, a generic _CV_ and possibly many others. 
+Once again, note how the label needs to be adjusted and adapt it accordingly.
+
+```{r}
+#| eval: false
+  - label: <i class="ai ai-orcid ai-2x"></i>
+    url: "https://orcid.org/0000-0003-1412-4402" 
+  - label: <i class="ai ai-google-scholar ai-2x"></i>
+    url: "https://scholar.google.nl/citations?user=q_cH9ZgAAAAJ&hl=en"
+  - label: <i class="ai ai-cv ai-2x"></i>
+    url: "https://nehamoopen.github.io/CV/"
+```
+
+Lastly, to get Academicons to work, you need to include one line of code immediately after the `---` in your `index.Rmd` file. In other words, right after the end of your YAML header/metadata area and right before any text in the body of your document.
+
+```{r}
+#| eval: false
+<!--Academicons Icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+```
+
+### Write
+
+Write a couple of lines as part of your bio.
+
+## Render to HTML
+
+When you're finished, click the `Knit` button to render to HTML.
