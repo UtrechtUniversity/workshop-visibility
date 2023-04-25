@@ -5,5 +5,68 @@
     "title": "Improve Your Online Visibility",
     "section": "",
     "text": "1 Welcome\nThis workshop will take you through setting up two simple websites using the postcards package and the Quarto publishing system."
+  },
+  {
+    "objectID": "installation-and-setup.html",
+    "href": "installation-and-setup.html",
+    "title": "2  Installation & Setup",
+    "section": "",
+    "text": "For this workshop you need the following:\n\nR, which can be downloaded from the CRAN website.\nRStudio, which can be downloaded from the posit.co website.\nQuarto, which can be downloaded from the Quarto website.\nThe postcards and fontawesome R packages.\n\nFor this, you can open RStudio and paste the following lines of code in the Console and press enter.\n\ninstall.packages(\"postcards\")\n\n\ninstall.packages(\"fontawesome\")\n\n\nAn account on GitHub.\n\nFinally, it would be good if you had a photo of yourself that you could use for your personal website."
+  },
+  {
+    "objectID": "postcards.html#choose-a-template",
+    "href": "postcards.html#choose-a-template",
+    "title": "3  Postcards",
+    "section": "3.1 Choose a template",
+    "text": "3.1 Choose a template\nThe postcards package offers five templates and it would be good to take a moment and which one you’d like to use. Don’t worry, you can always change it later if needed!\n\nJolla,\nJolla Blue,\nTrestles,\nOnofre,\nSolana."
+  },
+  {
+    "objectID": "postcards.html#create-the-project",
+    "href": "postcards.html#create-the-project",
+    "title": "3  Postcards",
+    "section": "3.2 Create the project",
+    "text": "3.2 Create the project\nIn RStudio, click File -> New Project -> New Directory -> Postcards Website\nSpecify the folder name for your new project, perhaps just postcard and select the template you would like to go with."
+  },
+  {
+    "objectID": "postcards.html#update-the-template",
+    "href": "postcards.html#update-the-template",
+    "title": "3  Postcards",
+    "section": "3.3 Update the template",
+    "text": "3.3 Update the template\nIn the index.Rmd file, update your name or website title and include a file path to your photo (which should preferably be in the same folder as `index.Rmd).\nYou can also update the URLs. If you would like to use icons for your URLs, you have the following options:\n\n3.3.1 Fontawesome Icons\nFontawesome icons can be embedded using the fontawesome package we installed earlier. It can be used for URLs related to email addresses, Twitter, LinkedIn, GitHub. Other icons are available as well, you might want to explore the possibilities by referring to the fontawesome package’s GitHub page\nNote how you would have to adapt the label field of your template below and adapt it accordingly.\n\n  - label: '`r fontawesome::fa(name = \"envelope\", height = \"30px\")`'\n    url: \"mailto:n.moopen@uu.nl\"\n  - label: '`r fontawesome::fa(name = \"github\", height = \"30px\")`'\n    url: \"https://github.com/nehamoopen\"  \n  - label: '`r fontawesome::fa(name = \"twitter\", height = \"30px\")`'\n    url: \"https://twitter.com/NehaMoopen\"\n  - label: '`r fontawesome::fa(name = \"linkedin\", height = \"30px\")`'\n    url: \"https://www.linkedin.com/in/neha-moopen/\"\n\n\n\n3.3.2 Academicons\nAcademicons can also be embedded like Fontawesome icons, but it looks a bit different. This is relevant for icons related to Orcid, Google Scholar, a generic CV and possibly many others. Once again, note how the label needs to be adjusted and adapt it accordingly.\n\n  - label: <i class=\"ai ai-orcid ai-2x\"></i>\n    url: \"https://orcid.org/0000-0003-1412-4402\" \n  - label: <i class=\"ai ai-google-scholar ai-2x\"></i>\n    url: \"https://scholar.google.nl/citations?user=q_cH9ZgAAAAJ&hl=en\"\n  - label: <i class=\"ai ai-cv ai-2x\"></i>\n    url: \"https://nehamoopen.github.io/CV/\"\n\nLastly, to get Academicons to work, you need to include one line of code immediately after the --- in your index.Rmd file. In other words, right after the end of your YAML header/metadata area and right before any text in the body of your document.\n\n<!--Academicons Icons-->\n<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css\">\n\n\n\n3.3.3 Write\nWrite a couple of lines as part of your bio."
+  },
+  {
+    "objectID": "postcards.html#render-to-html",
+    "href": "postcards.html#render-to-html",
+    "title": "3  Postcards",
+    "section": "3.4 Render to HTML",
+    "text": "3.4 Render to HTML\nWhen you’re finished, click the Knit button to render to HTML."
+  },
+  {
+    "objectID": "quarto.html#create-the-project",
+    "href": "quarto.html#create-the-project",
+    "title": "4  Quarto",
+    "section": "4.1 Create the project",
+    "text": "4.1 Create the project\nIn RStudio, click File -> New Project -> New Directory -> Quarto Website\nSpecify the folder name for your new project, perhaps just website and create the basic website project."
+  },
+  {
+    "objectID": "quarto.html#edit-_quarto.yml",
+    "href": "quarto.html#edit-_quarto.yml",
+    "title": "4  Quarto",
+    "section": "4.2 Edit _quarto.yml",
+    "text": "4.2 Edit _quarto.yml\n\nOpen the _quarto.yml file in RStudio and make some edits:\n\nSet the output-dir in your _quarto.yml file to docs like so:\n\n  type: website\n  output-dir: docs\n\n\nYou can update the title of your website and whether you want your navbar menu on left or right-hand side.\nFinally, you could choose another theme if you would like.\n\nThe default theme is cosmo but you can refer to the Bootswatch website for the other in-built themes available to you. This workshop website is built in Quarto with the pulse theme, for example."
+  },
+  {
+    "objectID": "quarto.html#render",
+    "href": "quarto.html#render",
+    "title": "4  Quarto",
+    "section": "4.3 Render",
+    "text": "4.3 Render\nSave your changes and click the Render button to create your website. The HTML files for the website should be built and saved in the docs output directory as specified earlier."
+  },
+  {
+    "objectID": "quarto.html#add-a-blog",
+    "href": "quarto.html#add-a-blog",
+    "title": "4  Quarto",
+    "section": "4.4 Add a blog",
+    "text": "4.4 Add a blog\nIf you want to add a blog to an existing Quarto website, the following tutorial is a good reference: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/"
   }
 ]
