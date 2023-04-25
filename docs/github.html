@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Neha Moopen">
 
-<title>Improve Your Online Visibility</title>
+<title>Improve Your Online Visibility - 5&nbsp; GitHub</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./installation-and-setup.html" rel="next">
+<link href="./quarto.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -70,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Improve Your Online Visibility</h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -95,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></a>
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Welcome</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -115,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./github.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub</span></a>
+  <a href="./github.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub</span></a>
   </div>
 </li>
     </ul>
@@ -127,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome"><span class="toc-section-number">1</span>  Welcome</a></li>
+  <li><a href="#advanced-github" id="toc-advanced-github" class="nav-link active" data-scroll-target="#advanced-github"><span class="toc-section-number">5.1</span>  Advanced GitHub</a></li>
   </ul>
 </nav>
     </div>
@@ -136,26 +135,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Improve Your Online Visibility</h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">GitHub</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Neha Moopen </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">Invalid Date</p>
-    </div>
-  </div>
   
     
   </div>
@@ -163,9 +150,27 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="welcome" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Welcome</h1>
-<p>This workshop will take you through setting up two simple websites using the <code>postcards</code> package and the Quarto publishing system.</p>
+<p>You can easily deploy your website on GitHub for free!</p>
+<p>For this tutorial, we’re going to assume nobody knows how to use Git &amp; GitHub (i.e.&nbsp;version control) and that GitHub is just a means to an end to getting your website online.</p>
+<ul>
+<li><p>Go to github.com and click the green button to create a new repository.</p></li>
+<li><p>Give your repository a clear name, preferably one that aligns with the name of your local folder.</p></li>
+<li><p>Make sure you create a <em>Public</em> repository, otherwise your website will not go online.</p></li>
+<li><p>Do not select any of the other options available to you at this moment. We want to create a wholly empty repository.</p></li>
+<li><p>Once the repository is created, you can click the option to add files manually to the repsitory. Then just drag and drop the contents of your local folder (the files within the folder) to GitHub.</p></li>
+<li><p>When everything is uploaded, you want to activate GitHub Pages. For this, you go the <em>Settings</em> of the repository and go to <em>Pages</em>. There you can turn on the Pages option and most importatly, specific the source for deployment:</p>
+<ul>
+<li>For a postcards website, this should be the root of the main branch.</li>
+<li>For a Quarto website, this should the docs folder of the main branch.</li>
+</ul></li>
+<li><p>If all goes well, the website will start building and it will be online in a couple of minutes!</p></li>
+</ul>
+<section id="advanced-github" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="advanced-github"><span class="header-section-number">5.1</span> Advanced GitHub</h2>
+<ul>
+<li><p>You can utilize the power of Git &amp; GitHub, to update your project using version control.</p></li>
+<li><p>You can also utilize GitHub Actions to skip building the website locally and have GitHub take care of that. This means that you would only need to edit your website via the GitHub website, instead of building it locally via RStudio and uploading the changes to GitHub.</p></li>
+</ul>
 
 
 </section>
@@ -306,11 +311,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./quarto.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Quarto</span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./installation-and-setup.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Installation &amp; Setup</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

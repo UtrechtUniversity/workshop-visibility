@@ -68,5 +68,12 @@
     "title": "4  Quarto",
     "section": "4.4 Add a blog",
     "text": "4.4 Add a blog\nIf you want to add a blog to an existing Quarto website, the following tutorial is a good reference: https://samanthacsik.github.io/posts/2022-10-24-quarto-blogs/"
+  },
+  {
+    "objectID": "github.html#advanced-github",
+    "href": "github.html#advanced-github",
+    "title": "5  GitHub",
+    "section": "5.1 Advanced GitHub",
+    "text": "5.1 Advanced GitHub\n\nYou can utilize the power of Git & GitHub, to update your project using version control.\nYou can also utilize GitHub Actions to skip building the website locally and have GitHub take care of that. This means that you would only need to edit your website via the GitHub website, instead of building it locally via RStudio and uploading the changes to GitHub."
   }
 ]
